@@ -13,7 +13,7 @@ body .container .team {
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1.5%;
 }
-body .container .team :nth-child(3n+2) {
+body .container .team :nth-child(3n + 2) {
   margin-top: 52px;
 }
 body .container .team .inner {
@@ -42,6 +42,7 @@ body .container .team .inner .job {
 
 @media (max-width: 500px) {
   .container {
+    width: 80% px;
     box-sizing: border-box;
   }
   .container header {
