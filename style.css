@@ -12,7 +12,7 @@ body .container .team {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 1.5%;
+  gap: 1%;
 }
 body .container .team :nth-child(3n+2) {
   margin-top: 52px;
