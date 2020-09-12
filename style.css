@@ -13,7 +13,7 @@ body .container .team {
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1.5%;
 }
-body .container .team :nth-child(3n + 2) {
+body .container .team :nth-child(3n+2) {
   margin-top: 52px;
 }
 body .container .team .inner {
@@ -29,9 +29,11 @@ body .container .team .inner .box {
 body .container .team .inner .box img {
   width: 90%;
   height: 35vh;
+  border-radius: 4px;
 }
 body .container .team .inner .box .name {
   margin-top: 3px;
+  font-weight: bold;
 }
 body .container .team .inner .job {
   text-transform: uppercase;
@@ -47,6 +49,10 @@ body .container .team .inner .job {
   }
   .container header {
     flex-direction: column;
+  }
+  .container header h1 {
+    font-size: 50px;
+    font-weight: bold;
   }
   .container .team {
     grid-template-columns: 200px 200px !important;

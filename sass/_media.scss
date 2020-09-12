@@ -4,6 +4,10 @@
     box-sizing: border-box;
     header {
       flex-direction: column;
+      h1 {
+        font-size: 50px;
+        font-weight: bold;
+      }
     }
     .team {
       //   display: grid;

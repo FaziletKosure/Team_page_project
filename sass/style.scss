@@ -30,9 +30,11 @@ body {
           img {
             width: 90%;
             height: 35vh;
+            border-radius: 4px;
           }
           .name {
             margin-top: 3px;
+            font-weight: bold;
           }
         }
         .job {
