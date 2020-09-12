@@ -23,6 +23,9 @@ body .container .team .inner {
 body .container .team .inner .job {
   margin-left: 20px;
 }
+body .container .team .inner .box {
+  width: inherit;
+}
 body .container .team .inner .box img {
   width: 90%;
   height: 35vh;
@@ -53,11 +56,11 @@ body .container .team .inner .job {
     margin-top: 52px;
   }
   .container .team .inner .box {
-    margin-right: 27px;
+    width: inherit;
+    margin-right: 13px;
   }
   .container .team .inner .box img {
     width: 130px !important;
-    margin-right: -19px;
     height: 30vh !important;
   }
   .container .team .inner .job {
