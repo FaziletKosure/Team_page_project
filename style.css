@@ -37,7 +37,7 @@ body .container .team .inner .job {
   margin-top: 2px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .container {
     box-sizing: border-box;
   }
@@ -45,14 +45,20 @@ body .container .team .inner .job {
     flex-direction: column;
   }
   .container .team {
-    grid-template-columns: 1fr 1fr !important;
-    grid-template-rows: 1fr 1fr !important;
+    grid-template-columns: 200px 200px !important;
+    grid-template-rows: 250px 250px !important;
+    gap: 20px;
   }
   .container .team :nth-child(2n) {
     margin-top: 52px;
   }
+  .container .team .inner .box {
+    margin-right: 27px;
+  }
   .container .team .inner .box img {
-    width: 150% !important;
+    width: 130px !important;
+    margin-right: -19px;
+    height: 30vh !important;
   }
   .container .team .inner .job {
     margin-left: 7px !important;

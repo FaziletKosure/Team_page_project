@@ -48,7 +48,7 @@ body {
     }
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .container {
     box-sizing: border-box;
     header {
@@ -56,15 +56,20 @@ body {
     }
     .team {
       //   display: grid;
-      grid-template-columns: 1fr 1fr !important;
-      grid-template-rows: 1fr 1fr !important;
+      grid-template-columns: 200px 200px !important;
+      grid-template-rows: 250px 250px !important;
+      gap: 20px;
       :nth-child(2n) {
         margin-top: 52px;
       }
       .inner {
         .box {
+          margin-right: 27px;
+          // width: 200px !important;
           img {
-            width: 150% !important;
+            width: 130px !important;
+            margin-right: -19px;
+            height: 30vh !important;
           }
         }
         .job {
