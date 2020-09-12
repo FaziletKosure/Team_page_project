@@ -45,7 +45,7 @@ body .container .team .inner .job {
 
 @media (max-width: 500px) {
   .container {
-    width: 80% px;
+    width: 70% px;
     box-sizing: border-box;
   }
   .container header {
