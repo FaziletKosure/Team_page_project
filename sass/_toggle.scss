@@ -1,0 +1,99 @@
+@function v($cssVar) {
+  @return var(--#{$cssVar});
+}
+
+[data-theme="light"] {
+  --bg: #eeeeee;
+  --font-color: #33363b;
+}
+
+[data-theme="dark"] {
+  --bg: #33363b;
+  --font-color: #eeeeee;
+
+  img:not([src*=".svg"]) {
+    filter: brightness(0.8) contrast(1.2);
+  }
+}
+
+// hide theme switch when JS is not enabled
+.no-js .theme-switch {
+  display: none;
+}
+
+.no-js {
+  visibility: invisible;
+  opacity: 0;
+  display: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: v(bg);
+  color: v(font-color);
+  transition: all 0.25s ease-in-out;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 1rem;
+}
+
+.theme-switch {
+  margin-top: 10px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: 0;
+  cursor: pointer;
+  user-select: none;
+  display: block;
+
+  .clr {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    display: none;
+  }
+
+  .activeThemeIcon {
+    display: block;
+  }
+
+  .animateThemeIcon {
+    animation: switchThemeIcon 0.25s ease-in-out;
+    transform-origin: center center;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes switchThemeIcon {
+    30% {
+      transform: translateY(0.3em) scale(0.5);
+      opacity: 0;
+    }
+
+    0%,
+    100% {
+      transform: translateY(0px) scale(1);
+      opacity: 1;
+    }
+  }
+
+  #SVGThemeSwitch {
+    font-size: 5rem;
+    color: v(font-color);
+  }
+}
