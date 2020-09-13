@@ -40,7 +40,11 @@ body {
         .job {
           margin-left: -8px;
           font-family: "PT Serif", serif;
+          font-family: var(--main-heading);
+          line-height: 13px;
           font-size: 12px;
+          font-weight: lighter;
+          letter-spacing: 1px;
         }
 
         .box {

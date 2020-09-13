@@ -42,7 +42,11 @@ body .container .team .inner {
 body .container .team .inner .job {
   margin-left: -8px;
   font-family: "PT Serif", serif;
+  font-family: var(--main-heading);
+  line-height: 13px;
   font-size: 12px;
+  font-weight: lighter;
+  letter-spacing: 1px;
 }
 body .container .team .inner .box {
   width: inherit;
@@ -92,7 +96,7 @@ body .container .team .inner .job {
     margin-top: 52px;
   }
   .container .team :nth-of-type(6) {
-    margin-top: 90px;
+    margin-top: 100px;
   }
   .container .team .inner .box {
     width: inherit;
@@ -100,6 +104,7 @@ body .container .team .inner .job {
   }
   .container .team .inner .box img {
     width: 130px !important;
+    font-weight: lighter;
     height: 30vh !important;
   }
   .container .team .inner .job {
