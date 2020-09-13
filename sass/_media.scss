@@ -3,10 +3,17 @@
     width: 450px;
     box-sizing: border-box;
     header {
+      margin: 0 auto !important;
+      max-width: 90%;
       flex-direction: column;
       h1 {
-        font-size: 40px;
+        font-size: 36px;
         font-weight: bold;
+      }
+      .content {
+        p {
+          font-size: 14px !important;
+        }
       }
     }
     .team {
@@ -17,6 +24,9 @@
       :nth-child(2n) {
         margin-top: 52px;
       }
+      :nth-of-type(6) {
+        margin-top: 90px;
+      }
       .inner {
         .box {
           width: inherit;
@@ -24,7 +34,7 @@
 
           img {
             width: 130px !important;
-            // margin-right: -19px;
+
             height: 30vh !important;
           }
         }

@@ -1,11 +1,29 @@
+body {
+  font-family: Poppins, sans-serif;
+}
 body .container {
   margin: auto;
   width: 100%;
   max-width: 1100px;
 }
 body .container header {
+  margin: 100px 0;
   display: flex;
   justify-content: space-between;
+}
+body .container header .head {
+  flex: 1;
+  font-family: "PT Serif", serif;
+}
+body .container header .content {
+  flex: 1;
+}
+body .container header .content h3 {
+  font-family: "Poppins", sans-serif;
+}
+body .container header .content p {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
 }
 body .container .team {
   margin-top: 10px;
@@ -15,7 +33,7 @@ body .container .team {
   gap: 1%;
 }
 body .container .team :nth-child(3n+2) {
-  margin-top: 52px;
+  margin-top: 60px;
 }
 body .container .team .inner {
   display: flex;
@@ -23,6 +41,8 @@ body .container .team .inner {
 }
 body .container .team .inner .job {
   margin-left: 20px;
+  font-family: "PT Serif", serif;
+  font-size: 12px;
 }
 body .container .team .inner .box {
   width: inherit;
@@ -35,6 +55,7 @@ body .container .team .inner .box img {
 body .container .team .inner .box .name {
   margin-top: 3px;
   font-weight: bold;
+  font-size: 14px;
 }
 body .container .team .inner .job {
   text-transform: uppercase;
@@ -49,11 +70,16 @@ body .container .team .inner .job {
     box-sizing: border-box;
   }
   .container header {
+    margin: 0 auto !important;
+    max-width: 90%;
     flex-direction: column;
   }
   .container header h1 {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: bold;
+  }
+  .container header .content p {
+    font-size: 14px !important;
   }
   .container .team {
     grid-template-columns: 200px 200px !important;
@@ -62,6 +88,9 @@ body .container .team .inner .job {
   }
   .container .team :nth-child(2n) {
     margin-top: 52px;
+  }
+  .container .team :nth-of-type(6) {
+    margin-top: 90px;
   }
   .container .team .inner .box {
     width: inherit;
