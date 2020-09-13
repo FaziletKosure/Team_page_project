@@ -82,6 +82,8 @@ body .container .team .inner .job {
     font-size: 14px !important;
   }
   .container .team {
+    margin: 0 auto !important;
+    max-width: 90%;
     grid-template-columns: 200px 200px !important;
     grid-template-rows: 250px 250px !important;
     gap: 20px;
