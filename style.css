@@ -33,14 +33,14 @@ body .container .team {
   gap: 1%;
 }
 body .container .team :nth-child(3n+2) {
-  margin-top: 60px;
+  margin-top: 70px;
 }
 body .container .team .inner {
   display: flex;
   justify-content: flex-start;
 }
 body .container .team .inner .job {
-  margin-left: 20px;
+  margin-left: -8px;
   font-family: "PT Serif", serif;
   font-size: 12px;
 }
@@ -49,8 +49,8 @@ body .container .team .inner .box {
 }
 body .container .team .inner .box img {
   width: 90%;
-  height: 35vh;
-  border-radius: 5px;
+  height: 40vh;
+  border-radius: 8px;
 }
 body .container .team .inner .box .name {
   margin-top: 3px;

@@ -8,7 +8,6 @@ body {
     header {
       margin: 100px 0;
       display: flex;
-      // flex-direction: row;
       justify-content: space-between;
       .head {
         flex: 1;
@@ -33,13 +32,13 @@ body {
       gap: 1%;
 
       :nth-child(3n + 2) {
-        margin-top: 60px;
+        margin-top: 70px;
       }
       .inner {
         display: flex;
         justify-content: flex-start;
         .job {
-          margin-left: 20px;
+          margin-left: -8px;
           font-family: "PT Serif", serif;
           font-size: 12px;
         }
@@ -49,9 +48,8 @@ body {
 
           img {
             width: 90%;
-            height: 35vh;
-            // display: block;
-            border-radius: 5px;
+            height: 40vh;
+            border-radius: 8px;
           }
           .name {
             margin-top: 3px;
@@ -63,7 +61,6 @@ body {
           text-transform: uppercase;
           transform-origin: 0 0;
           transform: rotate(90deg);
-          // margin-left: 3px
           margin-top: 2px;
         }
       }
