@@ -145,7 +145,17 @@ body .container .team .inner .job {
   margin-top: 2px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
+  .container .team .box img {
+    height: 40vh !important;
+  }
+}
+@media (max-width: 800px) {
+  .container .team .box img {
+    height: 35vh !important;
+  }
+}
+@media (max-width: 600px) {
   .container {
     width: 400px;
     box-sizing: border-box;
@@ -180,7 +190,7 @@ body .container .team .inner .job {
   }
   .container .team .inner .box img {
     width: 130px !important;
-    height: 30vh !important;
+    height: 21vh !important;
   }
   .container .team .inner .job {
     margin-left: 7px !important;

@@ -1,4 +1,26 @@
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
+  .container {
+    .team {
+      .box {
+        img {
+          height: 40vh !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    .team {
+      .box {
+        img {
+          height: 35vh !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
   .container {
     width: 400px;
     box-sizing: border-box;
@@ -37,7 +59,7 @@
           img {
             width: 130px !important;
             // font-weight: lighter;
-            height: 30vh !important;
+            height: 21vh !important;
           }
         }
         .job {
