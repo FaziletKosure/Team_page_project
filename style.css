@@ -33,17 +33,6 @@ html {
   transition: all 0.25s ease-in-out;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  gap: 1rem;
-}
-
 .theme-switch {
   margin-top: 10px;
   padding: 0;
@@ -87,12 +76,12 @@ body {
 
 body {
   font-family: Poppins, sans-serif;
+  overflow: auto;
 }
 body .container {
   margin: auto;
   width: 100%;
   max-width: 1100px;
-  overflow: auto;
 }
 body .container header {
   margin: 100px 0;
@@ -119,6 +108,7 @@ body .container .team {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1.5%;
+  margin-left: 10px;
 }
 body .container .team :nth-child(3n+2) {
   margin-top: 70px;
